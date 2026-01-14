@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a; /* Arka Plan: Derin Lacivert (Morlarla iyi gider) */
+            background-color: #0f172a; /* Arka Plan: Derin Lacivert */
             color: #f1f5f9;
             display: flex;
             flex-direction: column;
@@ -26,28 +26,28 @@
         }
 
         h1 {
-            color: #e9d5ff; /* Başlık Rengi: Açık Lila */
+            color: #60a5fa; /* Başlık: Göz alıcı Mavi */
             font-size: 3rem;
             margin: 0 0 20px 0;
-            font-weight: 900; /* Çok Kalın */
+            font-weight: 900; /* Ekstra Kalın */
             letter-spacing: -1px;
-            text-shadow: 0 0 20px rgba(168, 85, 247, 0.4); /* Hafif mor parlama */
+            text-shadow: 0 0 25px rgba(59, 130, 246, 0.3); /* Mavi parlama */
         }
 
         .quote-box {
             background: rgba(30, 41, 59, 0.7);
-            border-left: 6px solid #a855f7; /* Mor Çizgi */
+            border-left: 6px solid #3b82f6; /* Mavi Çizgi */
             padding: 25px;
             border-radius: 8px;
-            font-size: 1.15rem; /* Yazı büyüdü */
+            font-size: 1.15rem;
             line-height: 1.6;
             color: #e2e8f0;
-            font-weight: 500; /* Yazı kalınlaştı */
+            font-weight: 500;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .highlight {
-            color: #d8b4fe; /* Vurgular Lila */
+            color: #38bdf8; /* Vurgular Açık Mavi */
             font-weight: 800;
         }
 
@@ -67,8 +67,8 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: #c084fc; /* Açık Mor */
-            border-bottom: 2px solid #4c1d95; /* Koyu Mor Çizgi */
+            color: #94a3b8; /* Gri-Mavi */
+            border-bottom: 2px solid #1e293b;
             padding-bottom: 10px;
             margin-top: 30px;
             margin-bottom: 15px;
@@ -76,36 +76,36 @@
 
         /* Kart Yapısı */
         .card {
-            background-color: #f3e8ff; /* Kart Rengi: Çok Açık Mor (Lavender) */
-            border-radius: 16px; /* Daha yumuşak köşeler */
+            background-color: #ffffff; /* Kartlar BEYAZ (En net okuma için) */
+            border-radius: 16px;
             padding: 30px;
             display: flex;
             flex-direction: column;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
-            border: 1px solid #d8b4fe; /* İnce lila çerçeve */
+            border-top: 6px solid transparent; /* Üst çizgi gizli */
         }
 
         .card:hover {
             transform: translateY(-7px);
-            box-shadow: 0 20px 25px -5px rgba(88, 28, 135, 0.3), 0 10px 10px -5px rgba(88, 28, 135, 0.1);
-            border-color: #a855f7;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-top: 6px solid #2563eb; /* Hoverda Mavi Çizgi Belirir */
         }
 
         /* Kart İçeriği */
         .card-title {
             font-size: 1.4rem;
-            font-weight: 900; /* Ekstra Kalın Başlık */
-            color: #3b0764; /* Çok Koyu Mor (Okunabilirlik için) */
+            font-weight: 900; /* Kalın Başlık */
+            color: #0f172a; /* Koyu Lacivert (Siyah yerine) */
             margin: 0 0 15px 0;
             line-height: 1.2;
         }
 
         .card-desc {
-            font-size: 1rem; /* Punto büyüdü */
-            font-weight: 600; /* YAZILAR KALINLAŞTI (Medium-SemiBold) */
-            color: #581c87; /* Koyu Mor (Okunabilir) */
+            font-size: 1rem;
+            font-weight: 600; /* Kalınlaştırılmış Açıklama */
+            color: #475569; /* Koyu Gri */
             line-height: 1.6;
             margin-bottom: 30px;
             flex-grow: 1;
@@ -114,19 +114,19 @@
         /* Buton Tasarımı */
         .ai-link {
             display: block;
-            background-color: #7e22ce; /* Canlı Mor Buton */
-            color: #ffffff; /* Beyaz Yazı */
+            background-color: #2563eb; /* Güven Veren Mavi */
+            color: #ffffff;
             text-decoration: none;
             padding: 16px;
             border-radius: 10px;
             text-align: center;
-            font-weight: 800; /* Kalın Buton Yazısı */
+            font-weight: 800;
             transition: all 0.2s;
-            box-shadow: 0 4px 6px -1px rgba(126, 34, 206, 0.3);
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
         }
 
         .ai-link:hover {
-            background-color: #581c87; /* Hoverda daha koyu mor */
+            background-color: #1d4ed8; /* Hoverda koyu mavi */
             transform: scale(1.02);
         }
     </style>
